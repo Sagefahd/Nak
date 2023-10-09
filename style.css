@@ -1,0 +1,112 @@
+body {
+	background-image: url("image/try.webp");
+  background-repeat: no-repeat;
+	background-size: 100%;
+	object-fit: cover;
+}
+
+.nav-link {
+  margin-left: 150px;
+}
+
+.navbar-nav a:hover {
+    border-bottom: 3px solid whitesmoke ;
+}
+
+.navbar a:hover {
+  border-bottom: 3px solid blue ;
+  border-left: 3px solid blue;
+  border-right: 3px solid blue;
+  border-top: 3px solid blue;
+}
+.navbar-toggler {
+  border-color: transparent;
+  outline: none;
+}
+
+.navbar-toggler-icon {
+  background-color: transparent;
+  position: relative;
+  width: 20px;
+  height: 2px;
+}
+
+.navbar-toggler-icon:before,
+.navbar-toggler-icon:after {
+  content: "";
+  background-color: #fff;
+  position: absolute;
+  width: 20px;
+  height: 2px;
+  transition: all 0.3s ease;
+}
+
+.navbar-toggler-icon:before {
+  top: -6px;
+}
+
+.navbar-toggler-icon:after {
+  top: 6px;
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after {
+  transform: rotate(-45deg);
+  top: 0;
+}
+
+.navbar-nav .nav-item {
+  text-align: center;
+}
+
+/*this gives the submit button a sparkling effect*/
+.sparkle-btn {
+  position: relative;
+  overflow: hidden;
+}
+
+.sparkle-btn:before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0.8) 30%, rgba(255, 255, 255, 0) 40%);
+  opacity: 0;
+  transform: scale(0);
+  animation: sparkle 1.5s infinite;
+}
+
+@keyframes sparkle {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0);
+  }
+}
+
+/*spin effect to an image*/
+/*.spin-image {*/
+/*  animation: spin 4s linear infinite;*/
+}
+
+/*@keyframes spin {*/
+  0% {
+/*    transform: rotate(0deg);*/
+  }
+/*  100% {*/
+/*    transform: rotate(360deg);*/
+  }
+}
